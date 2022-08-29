@@ -1,0 +1,11 @@
+[
+    {
+        "model": "reptilerepoapi.lister",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "bio": "Me",
+            "date_joined": "2022-08-27"
+        }
+    }
+]

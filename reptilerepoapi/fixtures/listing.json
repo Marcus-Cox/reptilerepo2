@@ -1,0 +1,17 @@
+[
+    {
+        "model": "reptilerepoapi.listing",
+        "pk": 1,
+        "fields": {
+            "species": 1,
+            "sex": "female",
+            "morph": "Spider",
+            "age": 1,
+            "listing_date": "2022-08-27",
+            "hatch_date": "2021-08-27",
+            "diet": "rats",
+            "lister": 1,
+            "price": 12.20
+        }
+    }
+]

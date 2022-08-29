@@ -1,0 +1,9 @@
+[
+    {
+        "model": "reptilerepoapi.species",
+        "pk": 1,
+        "fields": {
+            "species": "Pythons"
+        }
+    }
+]
