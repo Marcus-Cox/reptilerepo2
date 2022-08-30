@@ -38,9 +38,9 @@ class ListingView(ViewSet):
             morph=request.data["morph"],
             age=request.data["age"],
             listing_date=request.data["listing_date"],
-            hatch_date=request.data.get["hatch_date"],
-            diet=request.data.get["diet"],
-            price=request.data.get["price"],
+            hatch_date=request.data.get("hatch_date"),
+            diet=request.data.get("diet"),
+            price=request.data.get("price"),
             lister=lister,
             species=species
         )

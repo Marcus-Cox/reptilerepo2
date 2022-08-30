@@ -25,4 +25,5 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'listings', ListingView, 'listing')
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include(router.urls)),
 ]
