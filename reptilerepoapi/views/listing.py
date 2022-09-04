@@ -1,4 +1,4 @@
-""" Module for Menu Items requests """
+""" Module for Listing Items requests """
 from cgi import print_exception
 from turtle import title
 from rest_framework.viewsets import ViewSet
@@ -10,10 +10,10 @@ from reptilerepoapi.models import Species
 
 
 class ListingView(ViewSet):
-    """ Menu Items Viewset """
+    """ Listing Items Viewset """
 
     def retrieve(self, request, pk):
-        """ Handle a GET request for a menu item """
+        """ Handle a GET request for a Listing item """
         try:
             listing = Listing.objects.get(pk=pk)
             serializer = ListingSerializer(listing)
@@ -22,13 +22,13 @@ class ListingView(ViewSet):
             return Response({}, status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
-        """ Handle a GET request for all of the menu items """
+        """ Handle a GET request for all of the Listing items """
         listings = Listing.objects.all()
         serializer = ListingSerializer(listings, many=True)
         return Response(serializer.data)
 
     def create(self, request):
-        """ Handle a POST request for a menu item """
+        """ Handle a POST request for a Listing item """
         # incoming_user = request.auth.user
         lister  = Lister.objects.get(user=request.auth.user)
         species = Species.objects.get(pk=request.data["species"])
@@ -48,23 +48,24 @@ class ListingView(ViewSet):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
-        """ Handles a PUT request for a menu item """
+        """ Handles a PUT request for a Listing item """
         editing_listing = Listing.objects.get(pk=pk)
 
         editing_listing.sex = request.data["sex"]
         editing_listing.morph = request.data["morph"]
         editing_listing.age = request.data["age"]
         editing_listing.listing_date = request.data["listing_date"]
-        editing_listing.hatch_date = request.data.get["hatch_date"]
-        editing_listing.diet=request.data.get["diet"]
-        species= Species.objects.get(pk=request.data["species"])
-        editing_listing.species=request.data.get["species"]
+        editing_listing.hatch_date = request.data.get("hatch_date")
+        editing_listing.diet=request.data.get("diet")
+        editing_listing.price=request.data.get("price")
+        # species= Species.objects.get(pk=request.data["species"])
+        # editing_listing.species=request.data.get("species")
         editing_listing.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk):
-        """ Handles a DELETE request for a menu item """
+        """ Handles a DELETE request for a Listing item """
         try:
             listing = Listing.objects.get(pk=pk)
             listing.delete()
@@ -75,7 +76,7 @@ class ListingView(ViewSet):
 
 
 class ListingSerializer(serializers.ModelSerializer):
-    """ JSON serializer for menu items """
+    """ JSON serializer for Listing items """
     class Meta:
         model = Listing
         fields = (

@@ -1,0 +1,23 @@
+[
+    {
+        "model": "reptilerepoapi.sex",
+        "pk": 1,
+        "fields": {
+            "sex": "female"
+        }
+    },
+    {
+        "model": "reptilerepoapi.sex",
+        "pk": 2,
+        "fields": {
+            "sex": "male"
+        }
+    },
+    {
+        "model": "reptilerepoapi.sex",
+        "pk": 3,
+        "fields": {
+            "sex": "intersex"
+        }
+    }
+]
