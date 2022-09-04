@@ -20,9 +20,11 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from reptilerepoapi.views import ListingView
+from reptilerepoapi.views.guide import GuideView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'listings', ListingView, 'listing')
+router.register(r'guides', GuideView, 'guide')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(router.urls)),

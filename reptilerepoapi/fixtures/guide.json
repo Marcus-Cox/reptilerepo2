@@ -1,0 +1,13 @@
+[
+    {
+        "model": "reptilerepoapi.guide",
+        "pk": 1,
+        "fields": {
+            "title": "Ball Python Care and Upkeep",
+            "description": "A Guide for Ball Pythons",
+            "content": "A adult ball python will need, at minimum, an enclosure that measures 4x2x2. PVC is highly recommended as the material to go for, as it is the best at retaining heat and humidity. They require a humidity that averages around 80%, with a basking spot of 90 degrees Fahrenheit and a cooler, ambient temperature of 75. Ideal substrates that retain moisture for humidity are coconut husk, cypress mulch, or a blend including organic topsoil. Aspen is inadequate as it molds easily. For temperatures, a halogen basking bulb for the hot spot will work, and a deep heat projector, or radiant heat panel, for the cooler end. Of course, you'll want all heat sources to run on a thermostat for safety.",
+            "publishing_date": "2022-09-03",
+            "author": 1
+        }
+    }
+]

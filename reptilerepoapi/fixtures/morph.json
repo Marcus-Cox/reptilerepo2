@@ -1,0 +1,44 @@
+[
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 1,
+        "fields": {
+            "Morph": "Spider"
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 2,
+        "fields": {
+            "Morph": "Piebald"
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 3,
+        "fields": {
+            "Morph": "Albino"
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 4,
+        "fields": {
+            "Morph": "Banana"
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 5,
+        "fields": {
+            "Morph": "Mojave "
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 6,
+        "fields": {
+            "Morph": "Pastel"
+        }
+    }
+]
