@@ -21,10 +21,14 @@ from django.urls import path
 from rest_framework import routers
 from reptilerepoapi.views import ListingView
 from reptilerepoapi.views.guide import GuideView
+from reptilerepoapi.views.morph import MorphView
+from reptilerepoapi.views.sex import SexView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'listings', ListingView, 'listing')
 router.register(r'guides', GuideView, 'guide')
+router.register(r'morphs',MorphView, 'morph')
+router.register(r'sex',SexView, 'sex')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(router.urls)),
