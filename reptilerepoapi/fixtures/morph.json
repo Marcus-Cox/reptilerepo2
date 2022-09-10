@@ -24,21 +24,42 @@
         "model": "reptilerepoapi.morph",
         "pk": 4,
         "fields": {
-            "Morph": "Banana"
+            "Morph": "Leucistic"
         }
     },
     {
         "model": "reptilerepoapi.morph",
         "pk": 5,
         "fields": {
-            "Morph": "Mojave "
+            "Morph": "Leatherback "
         }
     },
     {
         "model": "reptilerepoapi.morph",
         "pk": 6,
         "fields": {
-            "Morph": "Pastel"
+            "Morph": "Microscale "
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 7,
+        "fields": {
+            "Morph": "Harlequin "
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 8,
+        "fields": {
+            "Morph": "Pinstripe "
+        }
+    },
+    {
+        "model": "reptilerepoapi.morph",
+        "pk": 9,
+        "fields": {
+            "Morph": "Flame "
         }
     }
 ]

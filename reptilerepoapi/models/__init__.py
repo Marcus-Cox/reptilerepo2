@@ -5,3 +5,4 @@ from .guide import Guide
 from .morph import Morph
 from .sex import Sex
 from .diet import Diet
+from .reptilediet import ReptileDiet
