@@ -5,5 +5,26 @@
         "fields": {
             "species": "Pythons"
         }
+    },
+    {
+        "model": "reptilerepoapi.species",
+        "pk": 2,
+        "fields": {
+            "species": "Pythons"
+        }
+    },
+    {
+        "model": "reptilerepoapi.species",
+        "pk": 3,
+        "fields": {
+            "species": "Pythons"
+        }
+    },
+    {
+        "model": "reptilerepoapi.species",
+        "pk": 4,
+        "fields": {
+            "species": "Pythons"
+        }
     }
 ]
