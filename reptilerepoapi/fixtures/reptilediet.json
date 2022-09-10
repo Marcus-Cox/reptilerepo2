@@ -1,0 +1,10 @@
+[
+    {
+        "model": "reptilerepoapi.reptilediet",
+        "pk": 1,
+        "fields": {
+            "listing": 1,
+            "diet":1
+        }
+    }
+]

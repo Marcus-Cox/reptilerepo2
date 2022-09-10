@@ -1,0 +1,18 @@
+[
+  {
+    "model": "reptilerepoapi.listing_diet",
+    "pk": 1,
+    "fields": {
+      "listing_id": 1,
+      "diet_id": 3
+    }
+  },
+  {
+    "model": "reptilerepoapi.listing_diet",
+    "pk": 2,
+    "fields": {
+      "listing_id": 1,
+      "diet_id": 2
+    }
+  }
+]
